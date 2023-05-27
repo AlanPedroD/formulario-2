@@ -9,22 +9,26 @@
   transition: 0.6s;
 }
 
+body{
+  background-color: lightgrey;
+}
+
 main {
-  padding: 90px 0 90px 0;
+  padding: 40px 0 20px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: lightgrey;
-  /* background-color: black; */
 }
 
 form {
-  width: 500px;
+  width: 595px;
+  height: 842px;
   max-width: 100%;
   padding: 40px 0;
   border-radius: 16px;
   background-color: aliceblue;
+  margin-bottom: 5px;
 }
 
 form h2 {

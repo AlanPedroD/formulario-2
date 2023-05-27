@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulário</title>
     <link rel="stylesheet" href="estilos/formulario.css">
-    <script src="https://kit.fontawesome.com/049c2c2b37.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
   </head>
   <body>
     <main>
-      <form action="">
+      <form action="" id="myForm">
         <h2>Assentac</h2>
         <p>Fabricação e instalação de esquadrias</p>
         <h2 class="titulo">Orçamento</h2>
         <ul>
           <li>
             <label for="nome">Cliente</label>
-            <input class="inputs-padrao" type="text" name="nome" id="nome" required autofocus placeholder="Nome"/>
+            <input class="inputs-padrao" type="text" name="nome" id="nome" autofocus placeholder="Nome"/>
           </li>
           <li>
             <label for="email">Endereço</label>
@@ -59,6 +60,16 @@
               <option value="5">18</option>
               <option value="5">19</option>
               <option value="5">20</option>
+              <option value="5">21</option>
+              <option value="1">22</option>
+              <option value="2">23</option>
+              <option value="3">24</option>
+              <option value="4">25</option>
+              <option value="5">26</option>
+              <option value="5">27</option>
+              <option value="5">28</option>
+              <option value="5">29</option>
+              <option value="5">30</option>
             </select>
             <select name="mes">
               <option value="jan">Jan</option>
@@ -81,6 +92,7 @@
           </li>
         </ul>
       </form>
+      <button onclick="saveAsPDF()">Salvar como PDF</button>
     </main>
   </body>
 </html>
